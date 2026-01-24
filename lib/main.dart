@@ -154,7 +154,7 @@ class _QuizWidgetState extends State<QuizWidget> {
             ),
             const SizedBox(height: 16),
             const Text(
-              'Test your knowledge with\n this simple questions',
+              'Test your knowledge with\n this logic questions',
               style: TextStyle(
                 fontSize: 18,
                 color: Colors.white70,

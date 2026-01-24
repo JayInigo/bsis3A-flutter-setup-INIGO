@@ -46,11 +46,11 @@ class _QuizWidgetState extends State<QuizWidget> {
     {
       'question': "Everyone at a party is either telling the truth or lying. Alex says, \"Jordan is lying.\" Jordan says, \"Both of us are lying.\" Who is telling the truth?",
       'answers': ['Only Alex', 'Only Jordan', 'Both are telling the truth', 'Neither is telling the truth'],
-      'correctAnswer': 2,
+      'correctAnswer': 0,
     },
     {
-      'question': 'How many days are in a week?',
-      'answers': ['5', '6', '7', '8'],
+      'question': 'Two twins: one always tells the truth, the other always lies. You ask one twin, \“Is your brother a liar?\” They answer: \“Yes\”. \nWho did you talk to?',
+      'answers': ['The truth-teller', 'The liar', 'It could be either one', 'Neither'],
       'correctAnswer': 2,
     },
   ];

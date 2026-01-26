@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
 }
 
 class QuizWidget extends StatefulWidget {
-  const QuizWidget({Key? key}) : super(key: key);
+  const QuizWidget({super.key});
 
   @override
   State<QuizWidget> createState() => _QuizWidgetState();

@@ -43,51 +43,65 @@ class _QuizWidgetState extends State<QuizWidget> with SingleTickerProviderStateM
   final List<Map<String, dynamic>> questions = [
     {
       'question':
-          'If you have only one match and enter a dark room with a candle, a lamp, and a fireplace, what do you light first?',
-      'answers': ['Candle', 'Lamp', 'Fireplace', 'The match'],
-      'correctAnswer': 3,
-      'explanation': 'You must light the match first before you can light anything else!',
+          'Which feature would help BIGGS branches in Naga City manage customer flow during peak hours?',
+      'answers': [
+        'Digital queue number system with estimated wait time',
+        'Pre-order and scheduled pickup system',
+        'Table reservation with real-time availability',
+        'Customer feedback and rating system'
+      ],
+      'correctAnswer': 0,
+      'explanation': 'A digital queue number system helps manage crowds by letting customers see their position in line and estimated wait time on their phones, reducing congestion at the counter.',
     },
     {
       'question':
-          "Everyone at a party is either telling the truth or lying. Alex says, \"Jordan is lying.\" Jordan says, \"Both of us are lying.\" Who is telling the truth?",
+          "What mobile app feature would most benefit Mercury Drug stores in Quezon City?",
       'answers': [
-        'Only Alex',
-        'Only Jordan',
-        'Both are telling the truth',
-        'Neither is telling the truth'
+        'Prescription refill reminders and online ordering',
+        'Medicine inventory checker across branches',
+        'Senior citizen discount card registration',
+        'Pharmacist consultation booking system'
+      ],
+      'correctAnswer': 1,
+      'explanation':
+          'An inventory checker lets customers find out which branch has their needed medicine in stock before traveling, saving time and effort.',
+    },
+    {
+      'question':
+          'Which feature would help Tropical Hut Hamburger in Cubao, Quezon City improve their service?',
+      'answers': [
+        'Loyalty points and digital stamp card',
+        'Advance ordering for takeout/delivery',
+        'Menu item availability updates',
+        'Group order and party reservation system'
+      ],
+      'correctAnswer': 1,
+      'explanation': 'Advance ordering allows customers to place orders ahead of time and pick up their food ready, reducing wait time during busy hours.',
+    },
+    {
+      'question':
+          'What would help barangay health centers in Quezon City serve residents better?',
+      'answers': [
+        'Vaccination appointment scheduling', 
+        'Health record access and document requests', 
+        'Medicine availability notifications', 
+        'Online health consultation queue system'
       ],
       'correctAnswer': 0,
       'explanation':
-          'If Jordan were telling the truth, then both would be lying - but that would make Jordan a liar, which is contradictory. So Jordan must be lying, which means Alex is telling the truth.',
+          'An appointment scheduling system prevents long queues and overcrowding by organizing vaccination schedules, especially important during health campaigns.',
     },
     {
       'question':
-          'A farmer has 17 sheep. All but 9 die. How many sheep are left?',
-      'answers': ['8', '9', '0', '17'],
-      'correctAnswer': 1,
-      'explanation': '"All but 9" means 9 survived. So 9 sheep are left!',
-    },
-    {
-      'question':
-          'What occurs once in a minute, twice in a moment, but never in a thousand years?',
-      'answers': ['The letter M', 'Time', 'A heartbeat', 'Silence'],
-      'correctAnswer': 0,
-      'explanation':
-          'The letter "M" appears once in "minute", twice in "moment", and zero times in "thousand years".',
-    },
-    {
-      'question':
-          'If a red house is made of red bricks, and a blue house is made of blue bricks, what is a greenhouse made of?',
-      'answers': ['Green bricks', 'Glass', 'Wood', 'Plants'],
-      'correctAnswer': 1,
-      'explanation': 'A greenhouse is made of glass to let sunlight in for plants!',
-    },
-    {
-      'question': 'What gets wetter the more it dries?',
-      'answers': ['A sponge', 'A towel', 'Water', 'Rain'],
-      'correctAnswer': 1,
-      'explanation': 'A towel gets wetter as it dries other things!',
+          'Which feature would benefit LBC Express branches in Quezon City the most?',
+      'answers': [
+        'Real-time package tracking with GPS', 
+        'Pickup request scheduling from home', 
+        'Branch queue number and estimated service time', 
+        'Shipping rate calculator and comparison tool'
+      ],
+      'correctAnswer': 2,
+      'explanation': 'A queue number system with wait time helps customers avoid long lines at the branch by checking how busy it is before going there.',
     },
   ];
 
@@ -199,7 +213,7 @@ class _QuizWidgetState extends State<QuizWidget> with SingleTickerProviderStateM
                 borderRadius: BorderRadius.circular(20),
               ),
               child: const Icon(
-                Icons.quiz,
+                Icons.lightbulb,
                 size: 100,
                 color: Colors.white,
               ),
@@ -216,7 +230,7 @@ class _QuizWidgetState extends State<QuizWidget> with SingleTickerProviderStateM
             ),
             const SizedBox(height: 16),
             Text(
-              'Test your knowledge with\n${questions.length} logic questions',
+              'Test your knowledge with this\n${questions.length} business questions',
               style: const TextStyle(
                 fontSize: 18,
                 color: Colors.white70,

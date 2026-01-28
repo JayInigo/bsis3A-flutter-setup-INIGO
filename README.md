@@ -1,20 +1,46 @@
 # flutter_inigo
 
-A new Flutter project.
+# Quiz App
+# Features
+Start quiz screen with instructions
+Multiple-choice questions
+Real-time score tracking
+Answer validation (correct ❌ / ✔ feedback)
+Progress indicator per question
+Final result summary with percentage
+Restart quiz functionality
+Clean and colorful UI using Material 3
 
-## Getting Started
+# Technologies Used
+Flutter
+Dart
+Material 3 Design
+Stateful Widgets
+Custom UI Components
 
-This project is a starting point for a Flutter application.
+# App Structure
+main() – Entry point of the application
+MyApp – Sets up the app theme and home screen
+QuizWidget – Main quiz container
+buildStartView() – Start quiz screen
+buildQuizView() – Question and answer screen
+buildEndView() – Final score and restart screen
 
-A few resources to get you started if this is your first Flutter project:
+# How the Quiz Works
+User clicks Start Quiz
+Questions are shown one at a time
+User selects an answer
+App immediately shows if the answer is correct or wrong
+Score updates automatically
+Final results are displayed after the last question
+User can retry the quiz
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+# Sample Quiz Topics
+Customer queue management for local businesses
+Medicine inventory tracking for pharmacies
+Advance ordering systems for restaurants
+Vaccination appointment scheduling for health centers
+Package tracking and queue management for courier services
 
 # Personalized Questions
 Which feature would help BIGGS branches in Naga City manage customer flow during peak hours?
